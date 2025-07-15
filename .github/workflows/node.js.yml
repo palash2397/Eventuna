@@ -30,5 +30,5 @@ jobs:
           echo "${{ secrets.PROD_ENV_FILE }}" | tr -d '\r' > .env
           chmod 600 .env  
           ls -lah .env 
-    - run: pm2 restart index.js
+    - run: pm2 restart server.js
  
