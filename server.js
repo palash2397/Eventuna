@@ -30,6 +30,11 @@ app.get('/', (req, res) => {
   res.send('API is running on server...');
 });
 
+
+app.get('/hello', (req, res) => {
+  res.send('Hello world...');
+});
+
 // ✅ Start Server
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
